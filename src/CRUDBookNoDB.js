@@ -22,7 +22,7 @@ let books = [
     }
 ];
 
-app.get('/books', (req,res) => {
+app.get('/books', (req,res) => {        //if type /books will return object books
     res.json(books)
 })
 
@@ -54,7 +54,7 @@ app.delete('/books/:id', (req,res) => {
     const book = books.find(b => b.id === parseInt(req.params.id))
     if(!book) res.status(404).send('Book not found')
     const index = books.indexOf(book)
-    books.splice(index,1)
+    books.splice(index,1) //splice delete element in array
     res.send(book)
 })
 
