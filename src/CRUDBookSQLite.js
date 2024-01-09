@@ -60,7 +60,7 @@ app.put("/books/:id", (req, res) => {
   );
 });
 
-app.delete("/books", (req, res) => {
+app.delete("/books/:id", (req, res) => {
   db.run("DELETE FROM books WHERE id = ?", req.params.id, function (err) {
     if (err) {
       res.status(500).send(err);
