@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/CRUDBookSQLite.js",
+    "start": "node index.js",
     "format": "prettier --write *.js",
     "dev": "nodemon CRUDBookSQLite.js"
   },
@@ -18,6 +18,6 @@
   "dependencies": {
     "dotenv": "^16.4.1",
     "express": "^4.18.2",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "5.0.2"
   }
 }
