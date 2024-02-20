@@ -3,7 +3,7 @@ const mongoose = require("mongoose")
 const bodyParser = require("body-parser")
 
 mongoose.connect(
-    "mongodb://admin:OIZhhv87411@node57198-punnatheenoderest.proen.app.ruk-com.cloud:11778",
+    "mongodb://admin:OIZhhv87411@node57198-punnatheenoderest.proen.app.ruk-com.cloud",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true
